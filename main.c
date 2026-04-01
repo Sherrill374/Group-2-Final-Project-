@@ -2,6 +2,8 @@
 #include "menu.h"
 #include "mainLoop.h"
 
+//Main function integrates all modules
+
 int main() {
     int option;
 
