@@ -1,0 +1,7 @@
+#ifndef WRITEFILE_H
+#define WRITEFILE_H
+
+// Writes data to a file and handles errors
+void writeFile();
+
+#endif
