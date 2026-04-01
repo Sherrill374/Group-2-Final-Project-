@@ -1,0 +1,171 @@
+*/ Author: LeBresha Sherrill, John Tenny, Alaysha Britton
+Date: 04/01/2026*
+@charset: "utf-8";
+<link href="stylesheet" rel="styles.css" />
+
+/* General Body Styles */
+body {
+    /* Background and Font */
+    background-color:hsl:(27, 72%, 72%);
+    font-family: Arial, Helvetica, sans-serif; /* Web-safe font */
+    color: #333; /* Readable text color */
+}
+
+/* Header Styles */
+header {
+    text-align: center; /* Align text to the center */
+    font-size: 2.5em; /* Larger font size */
+    font-weight: bold; /* Bold font weight */
+    padding: 20px; /* Add padding */
+    background-color: #4682b4; /* Background color for header */
+    color: white; /* Contrasting text color */
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Style the list to appear horizontally */
+    justify-content: center; /* Center the navigation items */
+    background-color: #5f9ea0; /* Background for navigation */
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav li a:hover {
+    background-color: #708090; /* Background color change on hover */
+    color: #ffd700; /* Text color change on hover */
+}
+
+/* Main Sections Styles */
+section {
+    padding: 20px; /* Add padding to each section */
+    margin: 15px auto; /* Add margin and center sections */
+    max-width: 800px; /* Limit section width for better readability */
+    border: 1px solid #ccc; /* Add a border */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+    background-color: white; /* White background for content areas */
+}
+
+/* Footer Styles */
+footer {
+    font-size: 0.8em; /* Smaller font */
+    text-align: center; /* Align text to the center */
+    background-color: #2f4f4f; /* Contrasting background color */
+    color: #f0f8ff; /* Contrasting text color */
+    padding: 15px;
+    margin-top: 30px;
+}
+   /* ===== Navigation ===== */
+nav a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #333;
+  transition: background-color 0.3s ease; /* smooth transition */
+}
+
+nav a:hover {
+  background-color: #ddd; /* changes color on hover */
+}
+
+/* ===== Sections (Main Content) ===== */
+section {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: transform 0.3s ease; /* smooth scale transition */
+}
+
+section:hover {
+  transform: scale(1.02); /* zoom in effect */
+}
+
+/* ===== Table Styling ===== */
+#projects table {
+  width: 100%;
+  border-collapse: collapse; /* neat borders */
+  margin-top: 15px;
+}
+
+#projects th, 
+#projects td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+#projects thead th {
+  background-color: #333;
+  color: white;
+}
+
+#projects caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+#projects tfoot td {
+  text-align: center;
+  font-style: italic;
+  background-color: #f9f9f9;
+}
+
+/* Optional: images inside the table */
+#projects img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+  border-radius: 6px;
+}
+ 
+/* Phones (up to 600px) */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+/* Tablets (601px–900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  main {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  form {
+    width: 80%;
+  }
+}
+
+/* Desktops (901px and up) */
+@media (min-width: 901px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  section {
+    flex: 1 1 45%;
+  }
+}
