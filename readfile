@@ -1,7 +1,0 @@
-#ifndef READFILE_H
-#define READFILE_H
-
-// Reads data from a file and outputs to console
-void readFile();
-
-#endif
