@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "menu.h"
-#include "calculations.h"
+#include "firstcalculation.h"
+#include "secondcalculation.h"
 #include "file_ops.h"
 
 void displayMenu(void) {
