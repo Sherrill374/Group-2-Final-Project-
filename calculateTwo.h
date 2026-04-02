@@ -1,6 +1,6 @@
-#ifndef CALCULATIONS_H
-#define CALCULATIONS_H
+#ifndef SECONDCALCULATIONS_H
+#define SECONDCALCULATIONS_H
 
-int multiplyNumbers(int a, int b);
+int secondCalculation(int a, int b);
 
 #endif
