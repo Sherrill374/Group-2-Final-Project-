@@ -1,7 +1,0 @@
-#ifndef SECONDCALCULATION_H
-#define SECONDCALCULATION_H
-
-// Performs second mathematical calculation using two integers
-void secondCalculation(int a, int b);
-
-#endif
