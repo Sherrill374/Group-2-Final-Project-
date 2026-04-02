@@ -1,7 +1,7 @@
-#ifndef CALCULATIONS_H
-#define CALCULATIONS_H
+#ifndef FIRSTCALCULATION_H
+#define FIRSTCALCULATION_H
 
-int addNumbers(int a, int b);
+void firstCalculation(int a, int b);
 
 #endif
 
