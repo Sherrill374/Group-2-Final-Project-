@@ -1,8 +1,9 @@
 #include <stdio.h>
-#include "menu.h"
-#include "firstcalculation.h"
-#include "secondcalculation.h"
-#include "file_ops.h"
+#include "Menu.h"
+#include "calculateOne.h"
+#include "calculateTwo.h"
+#include "writeFile.h"
+#include "readFile.h"
 
 void displayMenu(void) {
     printf("\n===== MAIN MENU =====\n");
@@ -27,14 +28,13 @@ void handleChoice(int choice) {
         case 1:
             printf("Enter two integers: ");
             scanf("%d %d", &num1, &num2);
-            result = addNumbers(num1, num2);
-            printf("Result: %d\n", result);
+            firstCalculation(num1, num2);
             break;
 
         case 2:
             printf("Enter two integers: ");
             scanf("%d %d", &num1, &num2);
-            result = multiplyNumbers(num1, num2);
+            result = secondCalculation(num1, num2);
             printf("Result: %d\n", result);
             break;
 
